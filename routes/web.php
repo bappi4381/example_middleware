@@ -23,4 +23,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
+Route::get('/admin/manage', [HomeController::class, 'adminManage'])->name('admin.manage')->middleware('is_admin');
+Route::get('/admin/add', [HomeController::class, 'adminAdd'])->name('admin.add')->middleware('is_admin');
+Route::post('/admin/user/add', [HomeController::class, 'adminCreate'])->name('user.create')->middleware('is_admin');
+Route::get('/admin/search', [HomeController::class, 'adminSearch'])->name('admin.search')->middleware('is_admin');
