@@ -108,7 +108,7 @@
                     <li class="menu-title">Menu</li>
 
                     <li>
-                        <a href="" class="waves-effect">
+                        <a href="{{route('admin.home')}}" class="waves-effect">
                             <i class="bx bx-home-circle"></i>
                             <span>Dashboards</span>
                         </a>
@@ -118,11 +118,10 @@
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="bx bx-layout"></i>
-                            <span>Teacher Module</span>
+                            <span>Admin Module</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="">Add Teacher</a></li>
-                            <li><a href="">Manage Teacher</a></li>
+                            <li><a href="{{route('admin.manage')}}">Manage Admin</a></li>
                         </ul>
                     </li>
 
@@ -131,7 +130,7 @@
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="bx bx-store"></i>
-                            <span>Course Module</span>
+                            <span>Module</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="">Manage Course</a></li>
@@ -142,7 +141,7 @@
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="bx bx-bitcoin"></i>
-                            <span>Student Module</span>
+                            <span> Module</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="crypto-wallet.html">Manage Student</a></li>
